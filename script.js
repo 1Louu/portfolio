@@ -3,8 +3,8 @@ const ReturnHide = "font-bold py-10 text-3xl hidden";
 const ReturnShow = "font-bold py-10 text-3xl text-white";
 
 // Style prédéfini de TailwindCSS pour le bouton Retour
-const Unselect = "bg-gray-700 flex flex-col w-lg m-5";
-const Select = "bg-gray-700 flex flex-col w-6xl m-5";
+const Unselect = "bg-zinc-800 flex flex-col w-lg m-5";
+const Select = "bg-zinc-800 flex flex-col w-6xl m-5";
 
 document.addEventListener('DOMContentLoaded', () => {
 
