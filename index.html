@@ -16,7 +16,7 @@
                     <h1 class="text-3xl font-bold">
                         Luc BOUVARD
                     </h1>
-                    <h2>
+                    <h2 class =" hover:text-[#FFFFFF]">
                         Game Programmer & Développeur
                     </h2>
                 </div>
@@ -41,7 +41,7 @@
             </div>
             <h2 class="font-bold text-3xl text-[#9cdab0] my-4">Game programming</h2>
             <!--Partie liste de bloc de projet-->
-            <p id="return" class="font-bold py-10 text-3xl hidden text-white">< Retourner</p>
+            <button id="return" class="hidden">< Retourner</button>
             <div class="flex flex-wrap ">
                 <!--Bloc de contenu-->
                 <div id="bloc3" class ="bg-zinc-800 flex flex-col w-lg m-5 ">
@@ -55,6 +55,10 @@
                     </div>
                 </div>
                 <div id="descript3" class ="hidden">
+                    <h4 class="font-bold text-2xl">Le contexte du projet</h4>
+                    <p class="text-white m-5">
+                        Ce projet était 
+                    </p>
                 </div>
 
                 <div id="bloc2" class ="bg-zinc-800 flex flex-col w-lg m-5">
@@ -70,26 +74,60 @@
                 <div id="descript2" class ="hidden">
                     <h4 class="font-bold text-2xl">Le contexte du projet</h4>
                     <p class="text-white m-5">
-                        Ce projet est ma première tentative à produire mon genre de jeu préféré ; les jeux de stratégie basé Tower Defense. <br>
-                        J'ai travaillé entièrement en autonomie avec le but de produire un prototype d'un jeu. <br>
-                        Mon objectif était de valoriser mes compétences de game programmer et aussi de produire des assets 3D via Blender. 
+                        Ce projet est ma première tentative de créer un jeu du genre que je préfère : les jeux de stratégie basés sur le Tower Defense.<br>
+                        J'ai travaillé entièrement en autonomie, avec pour objectif de produire un prototype jouable sous le moteur de jeu Godot.<br>
+                        Je voulais à la fois valoriser mes compétences de game programmer et m'initier à la modélisation 3D via Blender. 
                     </p>
                     <h4 class="font-bold text-2xl">Ce que j'ai appris</h4>
                     <p class="text-white m-5">
-                        J'ai initialement avait une idée du jeu plutôt ambitieux; C'est-à-dire que j'ai voulu de produire une arène de défense sous grille 2D qui était générée procéduralement avec quelque paramètres pour offrir des expériences aléatoire.<br>
-                        Puis rajouter un système qui permettrai au joueur d'améliorer des tours avec des équipements, elle impliquait donc un système plus avancé et plus complexe. <br>
-                        Je me suis vite rendu compte de l'implication qu'elle avait; produire un ECS ( Entity Component System ) que je n'ai pas encore maîtrisé donc je suis partit sur une idée plus simple.<br>
+                        En travaillant sur ce projet, j'ai compris que la création d'un jeu de Tower Defense efficace nécessitait une bonne maîtrise de l'architecture logicielle, et notamment des concepts avancés comme les systèmes ECS (Entity-Component System).<br>
+                        Mon idée de départ incluait des mécaniques ambitieuses :<br>
+                    </p>
+                    <ul class="text-white m-5 list-disc px-8 ">
+                        <li>une grille 2D générée procéduralement</li>
+                        <li>des systèmes de personnalisation et d'amélioration des tours avec des équipements</li>
+                    </ul>
+                    <p class="text-white m-5">
+                        Mais en tentant d'implémenter ces systèmes, je me suis rendu compte que mes connaissances en architecture n'étaient pas encore suffisantes.<br>
+                        Cela m'a amené à revenir à l'essentiel : poser des bases solides en programmation orientée objet (POO), structurer mon code proprement et comprendre les interactions entre les entités du jeu.<br>
                         <br>
-                        J'ai eu quelque difficultés comme ; 
+                        Ce projet a donc été une étape importante dans la consolidation de mes compétences fondamentales en tant que game programmer.
                     </p>
                     <ul class="text-white m-5 list-disc px-8 ">
                         <li>Définir une architecture de jeu efficace ainsi que l'application du concept de la <strong>POO</strong> (Programation Objet Orienté).</li>
-                        <li></li>
+                        <li>Savoir comment programmer les comportements des enemis.</li>
                     </ul>
+                    <p class="text-white m-5">
+                        Durant le développement, plusieurs défis techniques se sont présentés, notamment autour de l'organisation du code et de la logique de gameplay.<br>
+                        Ces difficultés ont directement contribué à me faire prendre conscience de l'importance de structurer proprement un projet de jeu, même en solo.<br>
+                        <br>
+                        Les principaux obstacles rencontrés ont été :
+                    </p>
+                    <ul class="text-white m-5 list-disc px-8 ">
+                        <li>Définir une architecture claire et maintenable, en particulier pour gérer les entités du jeu (tours, ennemis, projectiles). </li>
+
+                        <li>Programmer les comportements des ennemis, notamment leur navigation vers les portes et leur interaction avec les tours.
+                        Cela m'a demandé de réfléchir à la gestion des états (IA simple), au pathfinding, et à la communication entre entités.</li>
+                        <li>Concevoir des systèmes modulables, comme l'amélioration des tours ou de diverse type de défense , qui auraient nécessité une architecture plus avancée de type ECS, que je ne maîtrisais pas encore.</li>
+                    </ul>
+                    <p class="text-white m-5">
+                        Face à ces difficultés, j'ai fait le choix de recentrer mon projet pour renforcer d'abord mes bases :
+                        j'ai ainsi pu mieux appréhender des notions comme l'encapsulation, l'héritage, et la gestion d'événements dans un contexte jeu vidéo.
+                    </p>
                     <h4 class="font-bold text-2xl">Mes créations</h4>
                     <div class="flex flex-wrap m-4">
                         <img src="assets\Tower.png" class="m-auto h-[230px]">
+                        <img src="assets\Slime.gif" class="m-auto h-[230px]">
                     </div>
+                    <p class="text-zinc-300 m-auto text-center italic">Modèle de la tour, avec un shader script et le modèle de slime avec des animations.</p>
+                    <p class="text-white m-5">
+                        J'ai modélisé mon premier ennemi (un slime) sous Blender, puis je l'ai riggé et animé pour l'intégrer dans Godot.<br>
+                        Ce fut ma première expérience d'animation 3D, et commencer avec un modèle simple m'a permis de comprendre les bases plus facilement.<br>
+                        <br>
+                        J'ai aussi créé un shader personnalisé pour afficher la portée des tours :<br>
+                        une sphère transparente s'affiche autour de la tour, et lorsqu'elle intersecte des objets de l'environnement, un effet de surlignage dynamique est généré.<br>
+                        Ce fut un challenge technique et une excellente introduction à la manipulation des shaders dans une optique de feedback visuel pour le joueur.
+                    </p>
                 </div>
 
                 <div id="bloc1" class ="bg-zinc-800 flex flex-col w-lg m-5">

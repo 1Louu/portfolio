@@ -1,6 +1,5 @@
 // Style prédéfini de TailwindCSS pour le bouton Retour
-const ReturnHide = "font-bold py-10 text-3xl hidden";
-const ReturnShow = "font-bold py-10 text-3xl text-white";
+const ReturnShow = "font-bold my-8 text-3xl text-white p-2 border-2 rounded-xl border-transparent hover:border-white";
 
 // Style prédéfini de TailwindCSS pour le bouton Retour
 const Unselect = "bg-zinc-800 flex flex-col w-lg m-5";
@@ -63,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function HideContent(){
-        returnButton.className = ReturnHide; 
+        returnButton.className = "hidden"; 
         descript1.className = "hidden";
         descript2.className = "hidden";
         descript3.className = "hidden";
